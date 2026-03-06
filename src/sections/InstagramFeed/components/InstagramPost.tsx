@@ -34,7 +34,7 @@ export const InstagramPost = (props: InstagramPostProps) => {
         <img
           src={props.postImageUrl}
           alt={props.postImageAlt}
-          className="box-border caret-transparent object-cover outline-[oklab(0.708_0_0_/_0.5)] w-full h-full"
+          className="box-border caret-transparent object-contain outline-[oklab(0.708_0_0_/_0.5)] w-full h-full"
         />
       </div>
       <div className="box-border caret-transparent outline-[oklab(0.708_0_0_/_0.5)] px-4 py-2">

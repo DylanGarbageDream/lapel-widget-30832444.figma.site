@@ -18,6 +18,17 @@ You MUST maintain this file to track your work across messages. This is NON-NEGO
 </instructions>
 
 <changelog>
+### [2026-03-06] — Merged Web Design into Digital Marketing & Updated Carousel
+- Merged Web Design service into Digital Marketing in `src/sections/Services/components/ServiceGrid.tsx`
+- Replaced testimonial carousel with product image carousel in `src/sections/Testimonials/components/TestimonialCarousel.tsx`
+- Added three product images (Torco oils, race car interior, engine bay) to carousel
+
+### [2026-03-06] — Removed Portfolio Section
+- Removed Portfolio import and section from `src/App.tsx`
+- Removed Portfolio link from `src/sections/Navbar/components/NavbarLinks.tsx`
+- Removed Portfolio link from `src/sections/Footer/components/FooterContent.tsx`
+- Removed "View Our Work" button from `src/sections/Hero/components/HeroButtons.tsx`
+
 ### [2026-03-05] — Added Third Instagram Post with Detailing Spray
 - Added third post with Meguiar's detailing spray image in `src/sections/InstagramFeed/components/InstagramMockup.tsx`
 

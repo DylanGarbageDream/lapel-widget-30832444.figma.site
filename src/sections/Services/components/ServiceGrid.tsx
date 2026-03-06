@@ -1,60 +1,56 @@
 import { useInView } from "@/hooks/useInView";
 import { ServiceCard } from "@/sections/Services/components/ServiceCard";
 
-const services = [
+export const services = [
   {
     number: "01",
-    iconUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/icon-2.svg",
-    title: "Advertising",
-    description: "Strategic campaigns that cut through the noise and place your brand where it matters most.",
+    slug: "branding-identity",
+    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/img/uploaded-asset-1772823305298-0.png",
+    title: "Branding & Identity",
+    description: "Complete brand systems that capture who you are and resonate with your audience.",
+    fullDescription: "We create comprehensive brand identities that go beyond logos. From visual systems to brand voice, we build cohesive identities that tell your story and connect with the people who matter most.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    services: ["Brand Strategy", "Logo Design", "Visual Identity", "Brand Guidelines", "Messaging & Voice"]
   },
   {
     number: "02",
-    iconUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/icon-3.svg",
-    title: "Branding",
-    description: "Identity systems that capture who you are and resonate with the people you want to reach.",
+    slug: "digital-marketing",
+    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/img/uploaded-asset-1772743848860-0.jpeg",
+    title: "Digital Marketing",
+    description: "Strategic campaigns across advertising, social media, SEO, and web design that drive real results.",
+    fullDescription: "We combine paid advertising, organic social strategy, technical SEO, and custom web design to create integrated campaigns that reach your audience wherever they are and convert them into customers.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    services: ["Paid Advertising", "Social Media Strategy", "SEO Optimization", "Website Design", "Web Development", "Analytics & Reporting", "Campaign Management"]
   },
   {
     number: "03",
-    iconUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/icon-4.svg",
-    title: "Content Marketing",
-    description: "Storytelling that builds trust, authority, and long-term audience relationships.",
+    slug: "content-creation",
+    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/img/uploaded-asset-1772743903478-0.jpeg",
+    title: "Content Creation",
+    description: "Compelling content and storytelling that builds trust and long-term relationships.",
+    fullDescription: "From blog posts to video scripts, we create content that educates, entertains, and converts. Our content marketing strategies build authority and keep your audience engaged over time.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    services: ["Content Strategy", "Copywriting", "Blog & Articles", "Email Marketing", "Content Calendars"]
   },
   {
     number: "04",
-    iconUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/icon-5.svg",
+    slug: "creative-production",
+    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/6f5bb5b9a96e859c9030f44f628a705276689f39.png",
     title: "Creative Production",
-    description: "Photo, video, and design production with the quality your brand demands.",
+    description: "Professional photo, video, design, and custom apparel with the quality your brand demands.",
+    fullDescription: "Our production team brings your vision to life with high-quality photography, videography, graphic design, and custom merchandise. From concept to final delivery, we handle every aspect of creative production.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    services: ["Photography", "Videography", "Motion Graphics", "Graphic Design", "Custom Apparel", "Post-Production"]
   },
   {
     number: "05",
-    iconUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/icon-6.svg",
-    title: "Public Relations",
-    description: "Earned media placements and industry visibility that build credibility at scale.",
-  },
-  {
-    number: "06",
-    iconUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/icon-7.svg",
-    title: "Social Media",
-    description: "Platform strategy, content creation, and community management that drives real engagement.",
-  },
-  {
-    number: "07",
-    iconUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/icon-8.svg",
-    title: "SEO Strategy",
-    description: "Technical and content-driven search optimization that puts your brand in front of buyers.",
-  },
-  {
-    number: "08",
-    iconUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/icon-9.svg",
-    title: "Web Design",
-    description: "Digital experiences that convert visitors into customers and reflect your brand's ambition.",
-  },
-  {
-    number: "09",
-    iconUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/icon-10.svg",
-    title: "Apparel Production",
-    description: "Custom apparel and merchandise that brings your brand to life and builds community loyalty.",
+    slug: "advertising",
+    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/a01d0330cfb8ce9c221442b089013639f9610d4f.png",
+    title: "Advertising",
+    description: "Strategic ad campaigns across digital and traditional channels that drive measurable growth.",
+    fullDescription: "We create and manage advertising campaigns that cut through the noise. From concept to execution, we develop compelling ads that reach your target audience and deliver ROI.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    services: ["Campaign Strategy", "Creative Development", "Media Buying", "Performance Tracking", "A/B Testing"]
   },
 ];
 

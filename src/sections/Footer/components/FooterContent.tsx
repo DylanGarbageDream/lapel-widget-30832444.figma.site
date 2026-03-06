@@ -10,7 +10,6 @@ export const FooterContent = () => {
         variant="navigation"
         links={[
           { href: "#services", text: "Services" },
-          { href: "#portfolio", text: "Portfolio" },
           { href: "#about", text: "About" },
           { href: "#contact", text: "Contact" },
         ]}

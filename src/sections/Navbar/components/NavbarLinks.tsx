@@ -8,12 +8,6 @@ export const NavbarLinks = () => {
         Services
       </a>
       <a
-        href="#portfolio"
-        className="box-border inline min-h-0 min-w-0 md:block md:min-h-[auto] md:min-w-[auto] hover:text-white transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-white after:transition-all after:duration-300 hover:after:w-full"
-      >
-        Portfolio
-      </a>
-      <a
         href="#about"
         className="box-border inline min-h-0 min-w-0 md:block md:min-h-[auto] md:min-w-[auto] hover:text-white transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-white after:transition-all after:duration-300 hover:after:w-full"
       >
