@@ -15,7 +15,7 @@ export const services = [
   {
     number: "02",
     slug: "digital-marketing",
-    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/img/uploaded-asset-1772743848860-0.jpeg",
+    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/img/uploaded-asset-1772825335707-0.jpeg",
     title: "Digital Marketing",
     description: "Strategic campaigns across advertising, social media, SEO, and web design that drive real results.",
     fullDescription: "We combine paid advertising, organic social strategy, technical SEO, and custom web design to create integrated campaigns that reach your audience wherever they are and convert them into customers.",
@@ -35,7 +35,7 @@ export const services = [
   {
     number: "04",
     slug: "creative-production",
-    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/6f5bb5b9a96e859c9030f44f628a705276689f39.png",
+    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/img/uploaded-asset-1772825456181-0.png",
     title: "Creative Production",
     description: "Professional photo, video, design, and custom apparel with the quality your brand demands.",
     fullDescription: "Our production team brings your vision to life with high-quality photography, videography, graphic design, and custom merchandise. From concept to final delivery, we handle every aspect of creative production.",
@@ -45,7 +45,7 @@ export const services = [
   {
     number: "05",
     slug: "advertising",
-    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/assets/a01d0330cfb8ce9c221442b089013639f9610d4f.png",
+    imageUrl: "https://c.animaapp.com/mmdx73wyuGbwQi/img/uploaded-asset-1772825818870-0.png",
     title: "Advertising",
     description: "Strategic ad campaigns across digital and traditional channels that drive measurable growth.",
     fullDescription: "We create and manage advertising campaigns that cut through the noise. From concept to execution, we develop compelling ads that reach your target audience and deliver ROI.",

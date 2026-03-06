@@ -18,6 +18,15 @@ You MUST maintain this file to track your work across messages. This is NON-NEGO
 </instructions>
 
 <changelog>
+### [2026-03-06] — Replaced Hero Background with Lucas Oil Burnout Image
+- Replaced video background with burnout image in `src/sections/Hero/components/HeroBackground.tsx`
+
+### [2026-03-06] — Updated Creative Production Service Image
+- Replaced Creative Production image with mountain landscape photo in `src/sections/Services/components/ServiceGrid.tsx`
+
+### [2026-03-06] — Updated Digital Marketing Service Image
+- Replaced Digital Marketing image with race car cockpit photo in `src/sections/Services/components/ServiceGrid.tsx`
+
 ### [2026-03-06] — Merged Web Design into Digital Marketing & Updated Carousel
 - Merged Web Design service into Digital Marketing in `src/sections/Services/components/ServiceGrid.tsx`
 - Replaced testimonial carousel with product image carousel in `src/sections/Testimonials/components/TestimonialCarousel.tsx`

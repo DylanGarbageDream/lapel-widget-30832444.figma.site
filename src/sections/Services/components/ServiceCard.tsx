@@ -31,7 +31,7 @@ export const ServiceCard = (props: ServiceCardProps) => {
         <img
           src={props.imageUrl}
           alt={props.title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className="w-full h-full object-cover object-[center_60%] transition-transform duration-700 group-hover:scale-110"
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
