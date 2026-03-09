@@ -20,14 +20,14 @@ export const InstagramFeed = () => {
               isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
           >
-            <p className="text-[oklch(0.439_0_0)] text-lg box-border leading-7 mb-4">
+            <p className="text-white text-lg box-border leading-7 mb-4">
               Follow our journey
             </p>
             <a
               href="https://www.instagram.com/rawenginemedia/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg font-semibold items-center box-border gap-x-2 inline-flex leading-7 gap-y-2 transition-colors duration-300 hover:text-gray-600"
+              className="text-white text-lg font-semibold items-center box-border gap-x-2 inline-flex leading-7 gap-y-2 transition-colors duration-300 hover:text-gray-300"
             >
               @rawenginemedia
             </a>

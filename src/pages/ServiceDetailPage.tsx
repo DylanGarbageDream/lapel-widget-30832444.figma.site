@@ -20,9 +20,26 @@ export const ServiceDetailPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      {/* Video Background - Only for Branding Identity */}
+      {slug === 'branding-identity' && (
+        <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
+          <iframe
+            src="https://player.vimeo.com/video/694628031?h=1f61ab5c4c&autoplay=1&loop=1&muted=1&background=1&controls=0"
+            className="absolute top-0 left-0 w-full h-full border-0 object-cover scale-[1.01]"
+            style={{
+              minWidth: '100%',
+              minHeight: '100%',
+            }}
+            allow="autoplay; fullscreen"
+            title="Branding Background Video"
+          />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+      )}
+
       {/* Back Button */}
-      <div className="max-w-screen-xl mx-auto px-6 md:px-12 pt-32 pb-12">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-12 pt-32 pb-12 relative z-10">
         <Link 
           to="/#services" 
           className="inline-flex items-center gap-2 text-[oklch(0.439_0_0)] hover:text-black transition-colors duration-300 group"
@@ -33,7 +50,7 @@ export const ServiceDetailPage = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-screen-xl mx-auto px-6 md:px-12 pb-16">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-12 pb-16 relative z-10">
         <div className="flex items-center gap-4 mb-6">
           <img
             src={service.iconUrl}
@@ -44,16 +61,16 @@ export const ServiceDetailPage = () => {
             {service.number}
           </div>
         </div>
-        <h1 className="text-5xl md:text-6xl font-bold uppercase tracking-tight mb-6">
+        <h1 className={`text-5xl md:text-6xl font-bold uppercase tracking-tight mb-6 ${slug === 'branding-identity' ? 'text-white' : ''}`}>
           {service.title}
         </h1>
-        <p className="text-xl text-[oklch(0.439_0_0)] max-w-3xl">
+        <p className={`text-xl max-w-3xl ${slug === 'branding-identity' ? 'text-white' : 'text-[oklch(0.439_0_0)]'}`}>
           {service.fullDescription}
         </p>
       </div>
 
       {/* Video Section */}
-      <div className="max-w-screen-xl mx-auto px-6 md:px-12 pb-16">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-12 pb-16 relative z-10">
         <div className="aspect-video bg-[oklch(0.95_0_0)] rounded-lg overflow-hidden">
           <iframe
             src={service.videoUrl}
@@ -61,22 +78,28 @@ export const ServiceDetailPage = () => {
             className="w-full h-full"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            onLoad={() => console.log('__ANIMA_DBG__ Service video loaded:', service.title)}
+            onError={(e) => console.error('__ANIMA_DBG__ Service video error:', service.title, e)}
           />
         </div>
       </div>
 
       {/* Services List */}
-      <div className="max-w-screen-xl mx-auto px-6 md:px-12 pb-24">
-        <h2 className="text-3xl font-bold uppercase tracking-tight mb-8">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-12 pb-24 relative z-10">
+        <h2 className={`text-3xl font-bold uppercase tracking-tight mb-8 ${slug === 'branding-identity' ? 'text-white' : ''}`}>
           What We Offer
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {service.services.map((item, index) => (
             <div 
               key={index}
-              className="border-l-4 border-black pl-6 py-4 hover:bg-[oklch(0.98_0_0)] transition-colors duration-300"
+              className={`border-l-4 pl-6 py-4 transition-colors duration-300 ${
+                slug === 'branding-identity' 
+                  ? 'border-white hover:bg-white/10' 
+                  : 'border-black hover:bg-[oklch(0.98_0_0)]'
+              }`}
             >
-              <h3 className="text-xl font-medium uppercase tracking-tight">
+              <h3 className={`text-xl font-medium uppercase tracking-tight ${slug === 'branding-identity' ? 'text-white' : ''}`}>
                 {item}
               </h3>
             </div>

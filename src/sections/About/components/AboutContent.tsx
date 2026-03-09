@@ -12,21 +12,21 @@ export const AboutContent = () => {
     >
       <div className="box-border min-h-[auto] min-w-[auto]">
         <div 
-          className={`text-[oklch(0.708_0_0)] text-sm box-border tracking-[1.4px] leading-5 uppercase mb-4 transition-all duration-700 ${
+          className={`text-white text-sm box-border tracking-[1.4px] leading-5 uppercase mb-4 transition-all duration-700 ${
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
           04 — About
         </div>
         <h2 
-          className={`text-4xl font-medium box-border tracking-[-0.9px] leading-10 uppercase mb-6 md:text-6xl md:tracking-[-1.5px] md:leading-[60px] transition-all duration-700 delay-100 ${
+          className={`text-white text-4xl font-medium box-border tracking-[-0.9px] leading-10 uppercase mb-6 md:text-6xl md:tracking-[-1.5px] md:leading-[60px] transition-all duration-700 delay-100 ${
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
           We Kill Ordinary.
         </h2>
         <p 
-          className={`text-[oklch(0.439_0_0)] text-lg box-border leading-7 mb-6 transition-all duration-700 delay-200 ${
+          className={`text-white text-lg box-border leading-7 mb-6 transition-all duration-700 delay-200 ${
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
@@ -40,10 +40,10 @@ export const AboutContent = () => {
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          <div className="text-5xl box-border leading-[48px] min-h-[auto] min-w-[auto]">
+          <div className="text-white text-5xl box-border leading-[48px] min-h-[auto] min-w-[auto]">
             {yearsCount}+
           </div>
-          <div className="text-[oklch(0.439_0_0)] box-border min-h-[auto] min-w-[auto]">
+          <div className="text-white box-border min-h-[auto] min-w-[auto]">
             Years of Impact
             <br className="box-border" />
             <span className="text-sm box-border leading-5">

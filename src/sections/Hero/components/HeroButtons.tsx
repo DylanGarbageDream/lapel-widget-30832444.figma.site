@@ -9,7 +9,7 @@ export const HeroButtons = () => {
         onClick={scrollToContact}
         className="text-black text-sm font-medium items-center bg-white gap-x-2 flex shrink-0 h-10 justify-center leading-5 min-h-[auto] min-w-[auto] gap-y-2 text-nowrap px-4 py-0 rounded-lg transition-all duration-300 hover:bg-white/90 hover:shadow-lg hover:shadow-white/20 active:scale-95"
       >
-        Start a Project
+        Get in Touch
         <img
           src="https://c.animaapp.com/mmdx73wyuGbwQi/assets/icon-1.svg"
           alt="Icon"

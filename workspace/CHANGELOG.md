@@ -18,6 +18,30 @@ You MUST maintain this file to track your work across messages. This is NON-NEGO
 </instructions>
 
 <changelog>
+### [2026-03-09] — Fixed Branding Video Positioning
+- Changed video from centered to top-aligned in `src/pages/ServiceDetailPage.tsx`
+- Removed translate transforms and adjusted positioning to fit perfectly at page top
+
+### [2026-03-06] — Removed Rick Astley Videos from Services
+- Cleared videoUrl fields for Branding, Digital Marketing, Creative Production, Advertising, and Social Media services in `src/sections/Services/components/ServiceGrid.tsx`
+
+### [2026-03-06] — Updated Content Creation Service Image
+- Replaced Content Creation image with spark plug photo in `src/sections/Services/components/ServiceGrid.tsx`
+
+### [2026-03-06] — Updated Content Creation Service Video
+- Replaced Content Creation video URL with Vimeo video in `src/sections/Services/components/ServiceGrid.tsx`
+
+### [2026-03-06] — Changed Text to White Without Background Boxes
+- Updated Hero content text colors to white in `src/sections/Hero/components/HeroContent.tsx`
+- Changed SectionHeader labels, titles, and descriptions to white in `src/components/SectionHeader.tsx`
+- Updated About section text to white in `src/sections/About/components/AboutContent.tsx`
+- Changed Instagram feed text to white in `src/sections/InstagramFeed/index.tsx`
+
+### [2026-03-06] — Fixed Vimeo Iframe Responsive Sizing
+- Removed borders and box-sizing issues in `src/sections/Hero/components/HeroBackground.tsx`
+- Applied `scale(1.01)` transform to eliminate edge gaps on all viewport sizes
+- Ensured full coverage on mobile (320px+), tablet (768px+), desktop (1920px+)
+
 ### [2026-03-06] — Replaced Hero Background with Lucas Oil Burnout Image
 - Replaced video background with burnout image in `src/sections/Hero/components/HeroBackground.tsx`
 

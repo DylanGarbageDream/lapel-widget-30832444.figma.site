@@ -131,6 +131,8 @@ const ProjectItem = ({ project, index }: { project: Project; index: number }) =>
                 frameBorder="0"
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                onLoad={() => console.log('__ANIMA_DBG__ Portfolio embed loaded:', project.title)}
+                onError={(e) => console.error('__ANIMA_DBG__ Portfolio embed error:', project.title, e)}
               />
             ) : project.image.endsWith('.mp4') || project.image.endsWith('.webm') ? (
               <video
