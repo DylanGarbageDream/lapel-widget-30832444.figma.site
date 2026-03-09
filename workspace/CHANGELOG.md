@@ -18,6 +18,19 @@ You MUST maintain this file to track your work across messages. This is NON-NEGO
 </instructions>
 
 <changelog>
+### [2026-03-09] — Swapped CTA and Services List Positions
+- Moved "What We Offer" section above CTA section in `src/pages/ServiceDetailPage.tsx`
+
+### [2026-03-09] — Moved Services List Below CTA Section
+- Repositioned "What We Offer" section below CTA in `src/pages/ServiceDetailPage.tsx`
+- Changed text colors from white to black and updated hover effects
+
+### [2026-03-09] — Moved Services Section Below Hero Video
+- Reordered sections in `src/App.tsx` so About appears before Services
+
+### [2026-03-09] — Removed Video Section from Service Detail Page
+- Deleted video iframe section from `src/pages/ServiceDetailPage.tsx`
+
 ### [2026-03-09] — Fixed Branding Video Positioning
 - Changed video from centered to top-aligned in `src/pages/ServiceDetailPage.tsx`
 - Removed translate transforms and adjusted positioning to fit perfectly at page top

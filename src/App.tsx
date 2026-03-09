@@ -11,11 +11,11 @@ import { ServiceDetailPage } from "@/pages/ServiceDetailPage";
 const HomePage = () => (
   <>
     <Hero />
-    <section id="services">
-      <Services />
-    </section>
     <section id="about">
       <About />
+    </section>
+    <section id="services">
+      <Services />
     </section>
     <InstagramFeed />
     <section id="contact">
